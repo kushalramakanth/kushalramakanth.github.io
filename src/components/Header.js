@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
-import { GitHub } from '@mui/icons-material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 
 const Header = () => {
   return (
@@ -25,6 +25,18 @@ const Header = () => {
           sx={{ ml: 2 }}
         >
           <GitHub />
+        </IconButton>
+
+        <IconButton
+          edge="end"
+          color="inherit"
+          aria-label="github"
+          href="https://www.linkedin.com/in/kushalramakanth/"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ ml: 2 }}
+        >
+          <LinkedIn />
         </IconButton>
       </Toolbar>
     </AppBar>

@@ -39,11 +39,11 @@ const Home = () => {
               <Typography>
                 LinkedIn:{' '}
                 <a
-                  href="https://www.linkedin.com/in/kushal-ramakanth" // Replace with your LinkedIn URL
+                  href="https://www.linkedin.com/in/kushalramakanth" // Replace with your LinkedIn URL
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  linkedin.com/in/kushal-ramakanth
+                  linkedin.com/in/kushalramakanth
                 </a>
               </Typography>
             </Grid>
