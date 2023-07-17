@@ -29,14 +29,14 @@ const Projects = () => {
                 <Folder />
               </ListItemIcon>
               <ListItemText
-                primary="Inventory Management Website"
+                primary="Geo-Tagged Social Media App"
                 secondary={
                   <>
                     <Typography component="span" variant="body2">
-                      A full stack website for managing the inventory of a bookstore.
+                      In collaboration with a team, a Flutter and Firebase powered social media app was developed, showcasing skills in collaborative, user-focused app development through multimedia sharing and location-based filtering.
                     </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
-                      Technologies: Angular, Bootstrap, NodeJS, ExpressJS, hosted on AWS S3 and AWS EC2
+                      Technologies: Flutter, Dart, Firebase Storage and Firestore, Git, Github, RESTful APIs, JSON, Agile/Scrum, Android, iOS
                     </Typography>
                   </>
                 }
@@ -48,14 +48,14 @@ const Projects = () => {
                 <Folder />
               </ListItemIcon>
               <ListItemText
-                primary="Movie Ticket Booking"
+                primary="Inventory Management Website"
                 secondary={
                   <>
                     <Typography component="span" variant="body2">
-                      A website template for an online movie ticket booking system.
+                      Developed a full-stack website to streamline inventory management for bookstores with PayPal for secure payments.
                     </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
-                      Technologies: HTML, CSS, Javascript, Bootstrap, Python, and Django
+                      Technologies: Angular, TypeScript, Bootstrap, NodeJS, ExpressJS, hosted on AWS S3 cloud and AWS EC2, unit tested on Jest.
                     </Typography>
                   </>
                 }
@@ -71,10 +71,10 @@ const Projects = () => {
                 secondary={
                   <>
                     <Typography component="span" variant="body2">
-                      A custom Convolutional Neural Network (CNN) model interfaced as a Flask web-app which detects bacterial and viral pneumonia using chest X-Ray images.
+                      Built a custom Convolutional Neural Network (CNN) model interfaced as a Flask web-app which detects bacterial and viral pneumonia using chest X-Ray images.
                     </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
-                      Technologies: Python, Numpy, Matplotlib, TensorFlow, and Flask for back-end
+                      Technologies: Python, Numpy, Matplotlib, TensorFlow, Flask for back-end
                     </Typography>
                   </>
                 }
@@ -90,10 +90,29 @@ const Projects = () => {
                 secondary={
                   <>
                     <Typography component="span" variant="body2">
-                      A machine learning model (KDTree) used to recommend restaurants to users based on their likes and dislikes using Collaborative Filtering.
+                      Designed an intelligent machine learning model using KDTree algorithm for recommending restaurants to users based on their likes and dislikes using Collaborative Filtering.
                     </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
-                      Technologies: Python, Numpy, Matplotlib, and TensorFlow
+                      Technologies: Python, Numpy, Matplotlib, TensorFlow
+                    </Typography>
+                  </>
+                }
+              />
+            </ListItem>
+            <Divider />
+            <ListItem alignItems="flex-start">
+              <ListItemIcon>
+                <Folder />
+              </ListItemIcon>
+              <ListItemText
+                primary="Road Damage Detection using CNNs"
+                secondary={
+                  <>
+                    <Typography component="span" variant="body2">
+                      Developed a custom Convolutional Neural Network (CNN) model to identify road damage, such as potholes and cracks, in road images. Performance was compared with pre-trained models like VGG16 and ResNet50.
+                    </Typography>
+                    <Typography component="span" variant="body2" sx={{ display: 'block' }}>
+                      Technologies: Python, TensorFlow, Matplotlib, Seaborn, Scikit Learn
                     </Typography>
                   </>
                 }
