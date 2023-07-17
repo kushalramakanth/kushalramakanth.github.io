@@ -1,23 +1,27 @@
 import React from 'react';
-import {
-  Container,
-  Typography,
-  Box,
-  Paper,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-} from '@mui/material';
+import { Container, Typography, Box, Paper, Grid, styled } from '@mui/material';
+
+const ShinyPaper = styled(Paper)`
+  padding: 32px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    border: 2px solid #1976d2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+`;
 
 const Education = () => {
   return (
-    <Container maxWidth="md">
-      <Box mt={4}>
-        <Typography variant="h4" component="h2" gutterBottom>
+    <Box bgcolor="#f6faff" py={6}>
+      <Container maxWidth="md">
+        <Typography variant="h4" component="h2" align="center" gutterBottom>
           Education
         </Typography>
-        <Paper sx={{ p: 4 }}>
+        <ShinyPaper>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Typography variant="h6" component="h3" gutterBottom>
@@ -34,9 +38,9 @@ const Education = () => {
               <Typography>Graduated: June 2019</Typography>
             </Grid>
           </Grid>
-        </Paper>
-      </Box>
-    </Container>
+        </ShinyPaper>
+      </Container>
+    </Box>
   );
 };
 

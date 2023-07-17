@@ -1,26 +1,28 @@
 import React from 'react';
-import {
-  Container,
-  Typography,
-  Box,
-  Paper,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  Divider,
-} from '@mui/material';
+import { Container, Typography, Box, Paper, Grid, List, ListItem, ListItemText, ListItemIcon, Divider, styled } from '@mui/material';
 import { Work } from '@mui/icons-material';
+
+const ShinyPaper = styled(Paper)`
+  padding: 32px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    border: 2px solid #1976d2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+`;
 
 const WorkExperience = () => {
   return (
-    <Container maxWidth="md">
-      <Box mt={4}>
-        <Typography variant="h4" component="h2" gutterBottom>
+    <Box bgcolor="#f6faff" py={6}>
+      <Container maxWidth="md">
+        <Typography variant="h4" component="h2" align="center" gutterBottom>
           Work Experience
         </Typography>
-        <Paper sx={{ p: 4 }}>
+        <ShinyPaper>
           <List>
             <ListItem alignItems="flex-start">
               <ListItemIcon>
@@ -60,9 +62,9 @@ const WorkExperience = () => {
               />
             </ListItem>
           </List>
-        </Paper>
-      </Box>
-    </Container>
+        </ShinyPaper>
+      </Container>
+    </Box>
   );
 };
 

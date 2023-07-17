@@ -1,14 +1,27 @@
 import React from 'react';
-import { Container, Typography, Box, Paper, Grid } from '@mui/material';
+import { Container, Typography, Box, Paper, Grid, styled } from '@mui/material';
+
+const ShinyPaper = styled(Paper)`
+  padding: 32px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    border: 2px solid #1976d2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+`;
 
 const Home = () => {
   return (
-    <Container maxWidth="md">
-      <Box mt={4}>
-        <Typography variant="h4" component="h2" gutterBottom>
+    <Box bgcolor="#f6faff" py={6}>
+      <Container maxWidth="md">
+        <Typography variant="h4" component="h2" align="center" gutterBottom>
           Introduction
         </Typography>
-        <Paper sx={{ p: 4 }}>
+        <ShinyPaper>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography variant="h6" component="h3">
@@ -56,9 +69,9 @@ const Home = () => {
               </Typography>
             </Grid>
           </Grid>
-        </Paper>
-      </Box>
-    </Container>
+        </ShinyPaper>
+      </Container>
+    </Box>
   );
 };
 
