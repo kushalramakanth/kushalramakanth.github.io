@@ -7,6 +7,7 @@ import Project from './components/Project';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
       <div className="App">
