@@ -9,15 +9,15 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <Education />
-      <WorkExperience />
-      <Project />
-      <Skills />
-      <Footer />
-    </div>
+      <div className="App">
+        <Header />
+        <Home />
+        <Education />
+        <WorkExperience />
+        <Project />
+        <Skills />
+        <Footer />
+      </div>
   );
 }
 
