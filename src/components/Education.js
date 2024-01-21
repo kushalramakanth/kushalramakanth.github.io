@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Paper, Grid, styled } from '@mui/material';
 
+
 const ShinyPaper = styled(Paper)`
   padding: 32px;
   border: 2px solid transparent;
@@ -28,7 +29,7 @@ const Education = () => {
                 Master of Science in Computer Science
               </Typography>
               <Typography>California State University, Chico</Typography>
-              <Typography>Expected Graduation: December 2023</Typography>
+              <Typography>Graduated: December 2023</Typography>
             </Grid>
             <Grid item xs={12} md={6}>
               <Typography variant="h6" component="h3" gutterBottom>

@@ -32,9 +32,9 @@ const WorkExperience = () => {
                 primary="Infotrack Telematics"
                 secondary={
                   <>
-                    <Typography component="span" variant="body2">
-                      Software Engineer
-                    </Typography>
+                      <Typography component="span" variant="body2" style={{ fontWeight: 'bold' }}>
+                        Software Engineer
+                      </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
                       Sep 2019 – Jul 2021
                     </Typography>
@@ -54,7 +54,7 @@ const WorkExperience = () => {
                         </li>
                       </ul>
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography variant="body2" style={{ fontWeight: 'bold' }}>
                       Technologies Used: Android, iOS, Flutter, APIs, Retrofit, RxJava/RxKotlin, Machine Learning libraries for facial recognition
                     </Typography>
                   </>
@@ -70,7 +70,7 @@ const WorkExperience = () => {
                 primary="Higin Esports"
                 secondary={
                   <>
-                    <Typography component="span" variant="body2">
+                    <Typography component="span" variant="body2" style={{ fontWeight: 'bold' }}>
                       Backend Development Intern
                     </Typography>
                     <Typography component="span" variant="body2" sx={{ display: 'block' }}>
@@ -92,7 +92,7 @@ const WorkExperience = () => {
                         </li>
                       </ul>
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography variant="body2" style={{ fontWeight: 'bold' }}>
                       Technologies Used: NodeJS, ExpressJS, ReactJS
                     </Typography>
                   </>

@@ -1,5 +1,9 @@
 import React from 'react';
 import { Container, Typography, Box, Paper, Grid, styled } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const ShinyPaper = styled(Paper)`
   padding: 32px;
@@ -23,22 +27,17 @@ const Home = () => {
         </Typography>
         <ShinyPaper>
           <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <Typography variant="h6" component="h3">
-                Kushal Ramakanth
+            <Grid item xs={12} md={6}>
+              <Typography>
+                <EmailIcon /> Email: <a href="mailto:kushalramakanth1@gmail.com">kushalramakanth1@gmail.com</a>
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography>
-                Email: <a href="mailto:kushalramakanth1@gmail.com">kushalramakanth1@gmail.com</a>
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Typography>Phone: (925) 804-1340</Typography>
+              <Typography><PhoneIcon /> Phone: (925) 804-1340</Typography>
             </Grid>
             <Grid item xs={12} md={6}>
               <Typography>
-                GitHub:{' '}
+                <GitHubIcon /> GitHub:{' '}
                 <a
                   href="https://github.com/kushalramakanth"
                   target="_blank"
@@ -50,9 +49,9 @@ const Home = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Typography>
-                LinkedIn:{' '}
+                <LinkedInIcon /> LinkedIn:{' '}
                 <a
-                  href="https://www.linkedin.com/in/kushalramakanth" // Replace with your LinkedIn URL
+                  href="https://www.linkedin.com/in/kushalramakanth"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -65,7 +64,7 @@ const Home = () => {
                 I am a highly motivated software engineer with experience in developing advanced applications
                 for location-based tracking of trucks and school buses, as well as engineering a ride-sharing app
                 on Android, iOS, and Flutter. I have a strong background in computer science, having completed
-                my Bachelor of Engineering and currently pursuing my Master of Science in Computer Science.
+                my Bachelor of Engineering and have completed my Master of Science in Computer Science.
               </Typography>
             </Grid>
           </Grid>
