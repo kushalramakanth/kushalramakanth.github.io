@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/kushalramakanth/kushalramakanth.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kushalramakanth/kushalramakanth.github.io/actions/workflows/pages/pages-build-deployment)
+
 # [Website URL: kushalramakanth.github.io](https://kushalramakanth.github.io/)
 
 
