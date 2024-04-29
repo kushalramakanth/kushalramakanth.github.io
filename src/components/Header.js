@@ -1,26 +1,9 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Avatar, styled, Dialog, DialogTitle, DialogContent, DialogContentText, Snackbar } from '@mui/material';
-import { GitHub, LinkedIn } from '@mui/icons-material';
+import { GitHub, LinkedIn, Email, Phone } from '@mui/icons-material';
+import { Typography, Avatar, IconButton, Snackbar } from '@mui/material';
 
-const StyledAppBar = styled(AppBar)`
-  background-color: #1976d2;
-`;
-
-const StyledTypography = styled(Typography)`
-  flex-grow: 1;
-`;
-
-const Header = () => {
-  const [open, setOpen] = useState(false);
+function Header() {
   const [copiedMessage, setCopiedMessage] = useState('');
-
-  const handleAvatarClick = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const handleEmailClick = () => {
     const email = 'kushalramakanth1@gmail.com';
@@ -38,59 +21,39 @@ const Header = () => {
     setCopiedMessage('');
   };
 
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/in/kushalramakanth", "_blank");
+  };
+
+  const handleGitHubClick = () => {
+    window.open("https://github.com/kushalramakanth", "_blank");
+  };
+
   return (
-    <StyledAppBar position="static">
-      <Toolbar>
-        <Avatar src="/profile.jpeg" alt="Profile" sx={{ width: 36, height: 36, marginRight: 2, cursor: 'pointer' }} onClick={handleAvatarClick} />
-        <StyledTypography variant="h6" component="div">
+    <header style={{ backgroundColor: '#f7fafc', borderBottom: '1px solid #e2e8f0' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px 0', display: 'flex', alignItems: 'center' }}>
+        <Avatar src="/profile.jpeg" alt="Profile" style={{ width: '64px', height: '64px', cursor: 'pointer' }} />
+        <Typography variant="h6" component="div" style={{ color: '#374151', marginLeft: '16px' }}>
           Kushal Ramakanth
-        </StyledTypography>
-        <Typography variant="body1" component="div" sx={{ marginRight: 2 }}>
-          <span onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
-            kushalramakanth1@gmail.com
-          </span>
         </Typography>
-        <Typography variant="body1" component="div" sx={{ marginRight: 2 }}>
-          <span onClick={handlePhoneClick} style={{ cursor: 'pointer' }}>
-            (925) 804-1340
-          </span>
-        </Typography>
-        <IconButton
-          edge="end"
-          color="inherit"
-          aria-label="github"
-          href="https://github.com/kushalramakanth"
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ marginRight: 1 }}
-        >
-          <GitHub />
-        </IconButton>
-
-        <IconButton
-          edge="end"
-          color="inherit"
-          aria-label="linkedin"
-          href="https://www.linkedin.com/in/kushalramakanth/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedIn />
-        </IconButton>
-
-        <Dialog open={open} onClose={handleClose}>
-          <DialogTitle>Profile Picture</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              <Avatar src="/profile.jpeg" alt="Profile" sx={{ width: '100%', height: 'auto' }} />
-            </DialogContentText>
-          </DialogContent>
-        </Dialog>
-
-        <Snackbar open={Boolean(copiedMessage)} autoHideDuration={2000} onClose={handleSnackbarClose} message={copiedMessage} />
-      </Toolbar>
-    </StyledAppBar>
+        <div style={{ marginLeft: 'auto' }}>
+          <IconButton color="inherit" aria-label="email" onClick={handleEmailClick}>
+            <Email fontSize="large" />
+          </IconButton>
+          <IconButton color="inherit" aria-label="phone" onClick={handlePhoneClick}>
+            <Phone fontSize="large" />
+          </IconButton>
+          <IconButton color="inherit" aria-label="github" onClick={handleGitHubClick}>
+            <GitHub fontSize="large" />
+          </IconButton>
+          <IconButton color="inherit" aria-label="linkedin" onClick={handleLinkedInClick}>
+            <LinkedIn fontSize="large" />
+          </IconButton>
+        </div>
+      </div>
+      <Snackbar open={Boolean(copiedMessage)} autoHideDuration={2000} onClose={handleSnackbarClose} message={copiedMessage} />
+    </header>
   );
-};
+}
 
 export default Header;
